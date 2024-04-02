@@ -8,6 +8,7 @@ function App() {
 
   return (
     <UserContextProvider>
+      // Taking the components
       <Login/>
       <Profile/>
     </UserContextProvider>
