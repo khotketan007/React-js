@@ -1,5 +1,5 @@
 import React from 'react';
-import Usercontext from './UserContext';
+import UserContext from './UserContext';
 
 // Creating the Method
 const UserContextProvider = ({children}) => {
@@ -8,10 +8,9 @@ const UserContextProvider = ({children}) => {
     return(
     // Wrapping the components nameIs : UserContext.Provider 
     // Provider is used to provide the data
-    <Usercontext.Provider value={{user, setUser}}>
-    // Pass the Children as it is to forward the same value / Data
+    <UserContext.Provider value={{user, setUser}}>
     {children}
-    </Usercontext.Provider>
+    </UserContext.Provider>
     )
 }
 

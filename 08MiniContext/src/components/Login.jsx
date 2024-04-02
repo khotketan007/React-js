@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react';
-import Usercontext from '../Context/UserContext';
+import UserContext from '../Context/UserContext';
 
 
 // Function to return the Value of Login
@@ -9,7 +9,7 @@ function Login(){
     const [passward, setPassward] = useState('')
 
     // Now using useContext to fetch the value and add to context
-    const [setUser] = useContext(Usercontext)
+    const {setUser} = useContext(UserContext)
 
     //Creating the handleSubmit Method to handle the event
     const handleSubmit = (e) => {
